@@ -1,0 +1,91 @@
+﻿.yellow-background {
+    margin: 50px auto;
+    width: 90vw;
+    height: 85vh;
+    background-color: #fcca26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+}
+
+.white-background {
+    background-color: whitesmoke;
+    width: 250px;
+    min-width: 250px; /* 👈 add this line */
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px;
+    border-radius: 5px;
+}
+
+.illustration {
+    padding: 15px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-displayed {
+    display: flex;
+}
+
+h2 {
+    margin-top: -5px;
+    background-color: #fcca26;
+    width: 50px;
+    padding: 3px 3px;
+}
+
+h2, h1, p {
+    margin-left: 15px;
+}
+
+.publication {
+    margin-top: -3px;
+}
+
+h1 {
+    width: 190px;
+}
+
+    h1:hover {
+        cursor: pointer;
+        background-color: #fcca26;
+    }
+
+.long-text {
+    margin-top: -2px;
+    font-weight: 100;
+    margin-right: 20px;
+    font-size: 11px;
+}
+
+.profile-pic {
+    margin: -2px 0 8px 8px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .white-background {
+        background-color: whitesmoke;
+        width: 80vw;
+        height: auto;
+        max-height: 80vh;
+    }
+}
+
+
+@media screen and (max-width: 256px) {
+    body {
+        overflow-x: auto;
+    }
+
+    .white-background {
+        width: 250px;
+        height: 320px;
+    }
+}
